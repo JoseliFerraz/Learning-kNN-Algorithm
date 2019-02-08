@@ -46,6 +46,6 @@ previsao<- knn(iristreino[,1:4],classificar[,1:4],iristreino[,5],k=3)
 tabela<-table(classificar[,5],previsao);tabela
 
 # --------------------------------------- # 
-# Tabela de confudimento-> Taxa de acertidade do modelo de 93%
+# Tabela de confudimento-> Taxa de acerto do modelo de 93%
 # --------------------------------------- # 
 (tabela[1] + tabela[5] + tabela[9]) / sum(tabela) 
